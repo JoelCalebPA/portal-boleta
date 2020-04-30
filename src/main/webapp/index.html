@@ -1,15 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="myApp">
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
 <link rel="stylesheet" href="/webjars/bootstrap/4.4.1/css/bootstrap.min.css" />
-<script type="text/javascript" src="/webjars/angularjs/1.7.9/angular.min.js"></script>
+<script type="text/javascript" src="/webjars/angularjs/1.7.9/angular.js"></script>
+<script type="text/javascript" src="/webjars/angular-ui-router/1.0.20/angular-ui-router.js"></script>
+<script type="text/javascript" src="/webjars/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="/webjars/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/resources/static/js/app.js"></script>
+<script type="text/javascript" src="/resources/static/js/service/AlfrescoService.js"></script>
+<script type="text/javascript" src="/resources/static/js/controller/AlfrescoController.js"></script>
 </head>
 <body>
-	<h1 class="">Hola Mundo 3</h1>
-	<script type="text/javascript" src="/webjars/jquery/3.3.1/jquery.min.js"></script>
-	<script type="text/javascript" src="/webjars/popper.js/1.16.0/popper.min.js"></script>
-	<script type="text/javascript" src="/webjars/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<div ui-view></div>
 </body>
 </html>

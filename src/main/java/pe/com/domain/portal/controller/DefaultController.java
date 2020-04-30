@@ -7,8 +7,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class DefaultController {
 
-	
-	
 	@GetMapping("/")
 	public String getIndex() {
 		return "index";
@@ -24,10 +22,9 @@ public class DefaultController {
 		return "error";
 	}
 	
-	@GetMapping("/alfresco")
-	public String getAlfresco(Model model) {
-		
-		return "alfresco";
+	@GetMapping("/documents")
+	public String getDocuments() {
+		return "template/documents";
 	}
 	
 }
